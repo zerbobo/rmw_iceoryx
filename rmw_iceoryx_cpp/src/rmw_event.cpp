@@ -60,10 +60,10 @@ rmw_ret_t rmw_event_set_callback(
   return RMW_RET_UNSUPPORTED;
 }
 
-rmw_ret_t
+bool
 rmw_event_type_is_supported(rmw_event_type_t event_type)
 {
   (void) event_type;
-  return RMW_RET_UNSUPPORTED;
+  return false;
 }
 }  // extern "C"
